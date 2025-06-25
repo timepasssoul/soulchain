@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoulChain | The Human Archive of Emotions on the Blockchain</title>
+    <meta name="description" content="SoulChain is a revolutionary Web3 platform preserving authentic human emotions as immutable blockchain entries on Solana." />
+    <meta name="keywords" content="SoulChain, crypto presale, emotional blockchain, Solana, Web3 journal, soul token" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <!-- Font Connections (do this first) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical Resource Preloads (only preload what's immediately needed) -->
+   <!-- <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin> -->
+    <link rel="preload" href="/src/main.tsx" as="script">
+    
+    <!-- Load fonts directly instead of preloading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SoulChain | Emotional Blockchain Presale 2025" />
+    <meta property="og:description" content="Join the SoulChain presale — the world's first emotional blockchain on Solana." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://thesoulchain.xyz" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SoulChain | The Human Archive of Emotions on the Blockchain" />
+    <meta name="twitter:description" content="Join the SoulChain presale — a Web3 movement to preserve emotions on-chain forever." />
+    <meta name="twitter:image" content="/og-image.png" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="SoulChain" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Lazy load non-critical images after page load -->
+    <script>
+     // Preload OG image only after initial page load if needed
+      window.addEventListener('load', () => {
+        const ogImage = new Image();
+        ogImage.src = '/og-image.png';
+      });
+    </script>
+  </body>
+</html>
